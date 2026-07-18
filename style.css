@@ -73,6 +73,14 @@ a {
 .eyebrow {
     margin-top: 7rem;
 }
+
+.project-card {
+    margin-bottom: 2rem;
+}
+
+.project-category {
+    color: grey;
+}
     /* =================== CASE STUDY =================== */
 .overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
 .case-image{height:700px;border-radius:36px;background:#f3f3f1;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:700;letter-spacing:-.05em}
