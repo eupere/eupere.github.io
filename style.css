@@ -46,6 +46,7 @@ a {
     margin:auto;
 }
 
+
 /* =====================================HEADER===================================== */
 
 .site-header {
@@ -63,6 +64,27 @@ a {
     display:flex;
     align-items:center;
     justify-content:space-between;
+}
+
+@media (max-width: 768px) {
+
+    .header-inner {
+        height:72px;
+    }
+
+    .navigation {
+        display:none;
+    }
+
+    .logo-avatar {
+        width:36px;
+        height:36px;
+    }
+
+    .logo-text {
+        font-size:18px;
+    }
+
 }
 
 /* =============== LOGO =============== */
