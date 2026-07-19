@@ -31,6 +31,14 @@ body {
     -webkit-font-smoothing:antialiased;
 }
 
+h2 {
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
 img {
     max-width:100%;
     display:block;
@@ -149,37 +157,112 @@ a {
         transform .25s ease,
         box-shadow .25s ease;
 }
-.button:hover {
-    transform: translateY(-2px);
-}
+
 
 /* Primary */
 .button-primary {
-    background: #4361ee;
+    background: #000;
     color: #fff;
-    border: 1px solid #4361ee;
-}
-.button-primary:hover {
-    background: #222;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid #000;
 }
 
+
 /* Secondary */
+
 .button-secondary {
     background: #4361ee;
     color: #fff;
     border: 1px solid var(--border);
 }
-.button-secondary:hover {
-    background: #f6f6f6;
-    border-color: #d9d9d9;
-}
+
+/* ========================= PROJECT CARDS ========================= */
+
 .project-card {
-    margin-bottom: 2rem;
+   /* margin-bottom: 2rem;*/
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
 }
 .project-category {
     color: grey;
 }
+
+/* ========================= PROJECT CONTENT ========================= */
+
+.project-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:1.5rem 0;
+    gap:16px;
+}
+
+.project-category{
+    /*margin:0;*/
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--text-secondary);
+}
+
+.project-content h3{
+    margin:0;
+    font-size:1.25em;
+    line-height:1.1;
+    letter-spacing:-.04em;
+}
+
+.project-text{
+    margin:0;
+    font-size:17px;
+    line-height:1.6;
+    color:var(--text-secondary);
+}
+
+.project-result{
+    display:flex;
+    /*flex-direction:column;*/
+    gap:4px;
+    padding-left:18px;
+    /*margin-top:16px;*/
+    border-left:4px solid #12ce09;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.project-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    width:max-content;
+    padding:6px 18px;
+    border:1px solid var(--border);
+    border-radius:999px;
+    background:#fff;
+    font-size:15px;
+    font-weight:600;
+    transition:
+        background .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+        }
+
+.project-link::after{
+    content:"→";
+}
+
+/*
+.project-link:hover{
+    background:#f7f7f7;
+    border-color:#d8d8d8;
+    transform:translateY(-2px);
+}*/
 
 /* =================== CASE STUDY =================== */
 .overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
