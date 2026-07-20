@@ -328,6 +328,10 @@ a {
 
 /* ========================= CASE META CARDS ========================= */
 
+.case-title {
+    line-height: 1.25;
+}
+
 .case-meta{
     display:flex;
     flex-wrap:wrap;
@@ -533,3 +537,69 @@ a {
     color:var(--text-secondary);
 }
     */
+
+/* =========================
+   PROCESS LIST
+========================= */
+
+ol{
+    list-style:none;
+    counter-reset:step;
+
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+
+    margin:40px 0 0;
+    padding:0;
+}
+
+ol li{
+    counter-increment:step;
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    padding:20px 24px;
+
+    border:1px solid var(--border);
+    border-radius:20px;
+
+    background:#fff;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+ol li::before{
+    content:counter(step);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:36px;
+    height:36px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    background:#111;
+    color:#fff;
+
+    font-size:15px;
+    font-weight:700;
+}
+
+ol li:hover{
+    transform:translateY(-2px);
+
+    border-color:rgba(0,0,0,.15);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
