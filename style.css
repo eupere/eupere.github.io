@@ -445,6 +445,15 @@ a.about.project-link::after{
     color:var(--text-secondary);
 }
 
+
+#contact {
+    background-color: #d4d8e12e;
+}
+
+#contact .eyebrow-case {
+    margin-top: 0px;
+}
+
 /* =================== CASE STUDY =================== */
 
 .overview-grid {
