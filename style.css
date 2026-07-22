@@ -240,9 +240,9 @@ ul, ol {
  .companies p{
      font-size:12px;
      letter-spacing:2px;
-     color:#d1d6df;
+     color:grey;
      font-weight:700;
-     margin-bottom:5px;
+     margin-bottom:10px;
 }
 
  .companies div{
@@ -251,6 +251,8 @@ ul, ol {
     flex-wrap: wrap;
     font-weight:800;
     color:#d1d6df;
+    opacity: 0.8;
+    filter: grayscale(100%);
 }
 
 .companies span{
