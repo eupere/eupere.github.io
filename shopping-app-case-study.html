@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ++++++++++++++++++++ SHOPPING APP CASE ++++++++++++++++++++ -->
+<!-- ++++++++++++++++++++ SHOPPING APP ++++++++++++++++++++ -->
 
 <html lang="en">
   <head>
@@ -7,9 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creating a Mobile Shopping App</title>
     <link rel="stylesheet" href="style.css">
-    <style>.case-hero {
-    padding-top: 100px;
+    <style>
+  
+    
+    .case-hero {
+      padding-top: 100px;
     }
+
+
+    .flags {
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+.flags img {
+    /*width:36px;
+    height:24px;
+    object-fit:contain;
+    display:block;
+    opacity: 0.8;*/
+   
+    width:40px;
+    height:auto;
+    object-fit:cover;
+    border-radius:4px;
+    opacity: 0.6;
+}
+
+.flags img:last-child {
+    border:1px solid lightgrey
+}
 </style>
   </head>
   <body>
@@ -35,7 +63,7 @@
           <div class="case-tags project-category">
             <span>UX/UI Design</span>
             <span>E-commerce</span>
-            <span>Personalization</span>
+            <span>Mobile</span>
           </div>
           <h1 class="case-title">PUMA Shopping App</h1>
          <!-- <p class="case-intro">Buidling a scalable design system to drive organizational change and financial efficiency.</p> -->
@@ -50,8 +78,16 @@
                 <strong>2021 — 2025</strong>
             </div>
             <div class="meta-card">
-                <span>Team</span>
-                <strong>Product</strong>
+                <span>Markets</span>
+                <div class="flags">
+                <img src="assets/images/flags/us.svg.webp" >
+                <img src="assets/images/flags/ca.svg.webp" >
+                <img src="assets/images/flags/uk.svg.webp" >
+                <img src="assets/images/flags/in.svg.webp" height="25px">
+                <img src="assets/images/flags/jp.svg.webp" >
+                </div>
+                <!-- <strong>US, CA, UK,
+                   IN, JP</strong> -->
             </div>
             </div>
         
@@ -71,20 +107,16 @@
           <h2>Launch Outcomes</h2>
           
           <div class="impact-grid">
-            <div class="project-result">
-              <strong><span>6mln iOS Downloads</span></strong>
+            <div class="case-project-result">
+              <span>6mln iOS Downloads</span>
             </div>
-            <div class="project-result">
-              <strong> <span></span>+160% E-Commerce CR Lift</span> </strong>
+            <div class="up case-project-result">
+              <span>+160% E-Commerce CR Lift</span>
             </div>
-            <div class="project-result">
-              <strong><span></span>+20% AOV Lift</span></strong>
+            <div class="up case-project-result">
+              <span>+20% AOV Lift</span>
             </div>
           </div>
-          <!-- <p style="color:lightgrey; margin-bottom: 1em;"><sub>* Benchmark against the mobile Puma website experience</sub></p> -->
-          <!-- <p class="section-intro">Creating a centrallized design system has not only <strong class="text-highlight">improved UX/UI experience</strong> consistency.</p>
-          <p class="section-intro">The system has had a <strong class="text-highlight">transformational impact</strong> on the organization fostering collaboration between designers, developers and other functions.</p><p class="section-intro"> It has created a <strong class="text-highlight">financial efficiency</strong> due to the generated savings, icreased conversion rates and the ability of the team to do more faster.</p>
-          <br> -->
         </div>  
       </section>
 
