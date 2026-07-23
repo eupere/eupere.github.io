@@ -43,12 +43,12 @@ p {
 /* === RESPONSIVE BREAKPOINTS ===*/
 @media (min-width:1024px){
 
-    .case-block p.section-intro{
+    /*.case-block p.section-intro{
         margin-top:0;
-    }
+    }*/
 
     h2.hero-title {
-        margin: 1em 0 0.3em;
+        margin: 1em 0 0.3rem;
     }
 
     .hero h1 {
@@ -56,7 +56,7 @@ p {
     }
 
     div.companies {
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
     }
 
 }
@@ -101,7 +101,6 @@ ul, ol {
     border-bottom:1px solid var(--border);
 }
 .header-inner {
-
     height: 80px;
     display: flex;
     align-items: center;
@@ -169,9 +168,9 @@ ul, ol {
 .hero-title {
     font-size: clamp(3.5rem, 9vw, 6.5rem); /* 56px → 104px */
     line-height: 0.9;
-    margin: 1.8em 0 0.3em;
+    margin: 1.8em 0 0.3rem;
     font-weight: 700;
-    letter-spacing: -0.06em;
+    letter-spacing: -0.06rem;
 }
 
 .hero-title span {
@@ -229,13 +228,13 @@ ul, ol {
 /* ======= COMPANIES ============= */
 
 .companies{
-        /*border-top :1px solid var(--border); */
-        /*border-bottom :1px solid var(--border);*/
-        margin:0 0;
-        margin-top:1em;
-        padding-top:1em;
-        padding-bottom:1em;
-        margin-bottom: 1em;
+    /*border-top :1px solid var(--border); */
+    /*border-bottom :1px solid var(--border);*/
+    margin:0 0;
+    margin-top:1rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    margin-bottom: 1rem;
 }
  .companies p{
      font-size:12px;
@@ -303,7 +302,7 @@ ul, ol {
 
 #work h2 {
     margin: 0;
-    padding: 1.5em 0 0 0;
+    padding: 1.5rem 0 0 0;
 }
 
 #work .eyebrow-case {
@@ -416,14 +415,14 @@ a.about.project-link::after{
     /*margin-top:16px;*/
     border-left:4px solid #12ce09;
 
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: .08em;
     text-transform: uppercase;
 }
 .case-project-result::before{
     content:"↓";
-    font-size:20px;
+    font-size:18px;
     font-weight:700;
     color:var(--text);
     position: relative;
@@ -434,6 +433,33 @@ a.about.project-link::after{
 div.up.case-project-result::before {
     content: "↗";
 }
+
+
+.case-hero {
+    margin-top: 100px;
+    }
+
+    .metric {
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+    }
+
+    .number {
+        font-weight: 800;
+    }
+
+    @media (max-width:638px) {
+
+      .metric {
+        flex-direction: row;
+      }
+      
+
+    }
+      
+    
+
 
 /* --------------------------------------------------------------------------- */
 
@@ -648,7 +674,7 @@ div.up.case-project-result::before {
 }
 
 .case-block p {
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 /* ========================= RESEARCH GRID ========================= */
@@ -659,7 +685,7 @@ div.up.case-project-result::before {
 
 .research-grid{
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     flex-wrap:wrap;
     gap:24px;
     margin-top:20px;
