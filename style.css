@@ -232,7 +232,7 @@ ul, ol {
         /*border-top :1px solid var(--border); */
         /*border-bottom :1px solid var(--border);*/
         margin:0 0;
-        margin-top:2em;
+        margin-top:1em;
         padding-top:1em;
         padding-bottom:1em;
         margin-bottom: 1em;
@@ -253,6 +253,7 @@ ul, ol {
     color:#d1d6df;
     opacity: 0.8;
     filter: grayscale(100%);
+    align-items: center;
 }
 
 .companies span{
@@ -279,7 +280,7 @@ ul, ol {
     align-items: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
     #hero .container {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -330,25 +331,12 @@ ul, ol {
 }
 
 .project-category{
-    /*margin:0;
-    font-size:13px;
-    font-weight:600;*/
-    letter-spacing:.08em;
+    letter-spacing: .08em;
     text-transform:uppercase;
     color:var(--text-secondary);
-
-
     font-family: 'Geist Mono', monospace;
-    text-transform: uppercase;
     font-size: 0.8rem;
-    letter-spacing: 0.05rem;
-    /* color: var(--color-gradient-purple); */
     font-weight: 400;
-    /* background-color: #5e0fdc; */
-    padding: 2px 6px;
-    border-radius: 6px;
-    white-space: nowrap;
-
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -359,7 +347,7 @@ ul, ol {
     margin:0;
     font-size:1.17em;
     line-height:1.1;
-    letter-spacing:-.04em;
+    font-weight: 500;
 }
 
 .project-text{
@@ -418,7 +406,36 @@ a.about.project-link::after{
     content: "↓";
 }
 
-/*
+/* ---------------------- Project Results Case Studies ------------------- */
+
+.case-project-result{
+    display:flex;
+    /*flex-direction:column;*/
+    gap:4px;
+    padding-left:18px;
+    /*margin-top:16px;*/
+    border-left:4px solid #12ce09;
+
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+.case-project-result::before{
+    content:"↓";
+    font-size:20px;
+    font-weight:700;
+    color:var(--text);
+    position: relative;
+    left: -7px;
+
+}
+
+div.up.case-project-result::before {
+    content: "↗";
+}
+
+/* --------------------------------------------------------------------------- */
 
 /* ========================= EXPERIENCE HIGHLIGHTS ========================= */
 
